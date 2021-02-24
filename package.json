@@ -54,6 +54,7 @@
     "onchange": "^4.1.0",
     "postcss-cli": "^6.0.0",
     "rimraf": "^2.5.4",
+    "stylelint": "^9.4.0",
     "uglify-es": "^3.3.10"
   },
   "homepage": "https://bitbucket.org/pasqualevitiello/ellie#readme"
