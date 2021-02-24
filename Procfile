@@ -1,1 +1,1 @@
-web: npm run hosted-start
+web: npm run start-hosted
