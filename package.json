@@ -35,7 +35,9 @@
     "dev": "run-s build watch"
   },
   "dependencies": {
-    "browser-sync": "^2.12.8"
+    "browser-sync": "^2.12.8",
+    "express": "^4.17.1",
+    "path": "^0.12.7"
   },
   "devDependencies": {
     "autoprefixer": "^9.0.1",
