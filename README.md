@@ -1,12 +1,24 @@
-# Ellie
+# Onit Landing
 
-A landing page template.
+A landing page for the Onit app based on the Ellie template by Cruip. This briefly gives some information about the app and a way to log in.
 
-* [Getting started](#getting-started)
 
-## Getting started
-* First, ensure that node.js & npm are both installed. If not, choose your OS and installation method from [this page](https://nodejs.org/en/download/package-manager/) and follow the instructions.
-* Next, use your command line to enter your project directory.
-* This template comes with a ready-to-use package file called `package-sample.json`. You just need to rename it to `package.json`, then run `npm install` to install all of the dependencies into your project.
+## Local Setup
 
-You're ready to go! Run any task by typing `npm run task` (where "task" is the name of the task in the `"scripts"` object). The most useful task for rapid development is `watch`. It will start a new server, open up a browser and watch for any SCSS or JS changes in the `src` directory; once it compiles those changes, the browser will automatically inject the changed file(s)!
+The project can be cloned and set up locally by the following CLI commands from the **onit-landing directory**.
+
+### `npm install`
+
+Install all of the Node dependencies for React and other third party packages used in this project.
+
+### `npm run build`
+
+Execute various linting, minifying and bundling sub-scripts on the CSS, JS and images to prepare the app for production.
+
+### `npm run start` (Local only)
+
+This starts the project by spinning up a new development server using BrowserSync, opens a new browser window / tab and then watches for SCSS or JS changes in the `src` directory. BrowserSync will automatically recompile when a change is made and reflect the change in the browser.
+
+### `npm run start-hosted` (Hosted only)
+
+This is used to spin up an Express server in a remote (headless) environment. The app has been set up for Heroku specifically, and as such has a Procfile that instructs the automatic execution of this script.
