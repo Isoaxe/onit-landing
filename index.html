@@ -431,5 +431,29 @@
     </div>
 
     <script src="dist/js/main.min.js"></script>
+    
+    <!-- The core Firebase JS SDK is always required and must be listed first -->
+    <script src="https://www.gstatic.com/firebasejs/8.2.9/firebase-app.js"></script>
+
+    <!-- TODO: Add SDKs for Firebase products that you want to use
+         https://firebase.google.com/docs/web/setup#available-libraries -->
+    <script src="https://www.gstatic.com/firebasejs/8.2.9/firebase-analytics.js"></script>
+
+    <script>
+      // Your web app's Firebase configuration
+      // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+      var firebaseConfig = {
+        apiKey: "AIzaSyD7OtnYqeu-9sEiEJKl1bkGpaRBEzTFfy0",
+        authDomain: "onit-aaa6e.firebaseapp.com",
+        projectId: "onit-aaa6e",
+        storageBucket: "onit-aaa6e.appspot.com",
+        messagingSenderId: "451988465101",
+        appId: "1:451988465101:web:335beb05b535b1257d9084",
+        measurementId: "G-CB3S63219R"
+      };
+      // Initialize Firebase
+      firebase.initializeApp(firebaseConfig);
+      firebase.analytics();
+    </script>
 </body>
 </html>
