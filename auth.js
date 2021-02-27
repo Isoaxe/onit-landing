@@ -1,6 +1,7 @@
 // Firebase app always required to be imported and listed first.
 const firebase = require('firebase/app');
-require('firebase/auth');
+const firebaseui = require('firebaseui');
+const auth = require('firebase/auth');
 
 const firebaseConfig = {
   apiKey: 'AIzaSyD7OtnYqeu-9sEiEJKl1bkGpaRBEzTFfy0',
@@ -14,3 +15,6 @@ const firebaseConfig = {
 
 // Initialize Firebase
 firebase.initializeApp(firebaseConfig);
+
+// Initialize the FirebaseUI Widget using Firebase.
+const ui = new firebaseui.auth.AuthUI(auth);
