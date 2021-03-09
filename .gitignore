@@ -5,4 +5,3 @@
 node_modules
 dist/
 .firebase/hosting..cache
-src/js/auth.js
