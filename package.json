@@ -20,7 +20,7 @@
     "scss": "node-sass --output-style compressed -o dist/css src/scss",
     "lint": "eslint src/js || true",
     "lint-scss": "stylelint src/scss/*.scss --syntax scss || true",
-    "uglify": "mkdirp dist/js -p && uglifyjs src/js/*.js -m -c -o dist/js/main.min.js",
+    "uglify": "mkdirp dist/js -p && uglifyjs src/js/main.js -m -c -o dist/js/main.min.js",
     "imagemin": "imagemin src/images/* -o dist/images",
     "start": "run-p serve watch:*",
     "start-hosted": "node server.js",
