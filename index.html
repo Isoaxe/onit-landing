@@ -435,6 +435,32 @@
       <script src="https://www.gstatic.com/firebasejs/8.2.10/firebase-app.js"></script>
       <!-- Add Firebase products that you want to use -->
       <script src="https://www.gstatic.com/firebasejs/8.2.10/firebase-auth.js"></script>
+
+      <script>
+        var firebaseConfig = {
+          apiKey: 'AIzaSyD7OtnYqeu-9sEiEJKl1bkGpaRBEzTFfy0',
+          authDomain: 'onit-aaa6e.firebaseapp.com',
+          projectId: 'onit-aaa6e',
+          storageBucket: 'onit-aaa6e.appspot.com',
+          messagingSenderId: '451988465101',
+          appId: '1:451988465101:web:335beb05b535b1257d9084',
+          measurementId: 'G-CB3S63219R'
+        };
+
+        // Initialize Firebase
+        firebase.initializeApp(firebaseConfig);
+
+        // Initialize the FirebaseUI Widget using Firebase.
+        const ui = new firebaseui.auth.AuthUI(firebase.auth());
+
+        ui.start('#firebaseui-auth-container', {
+          signInOptions: [
+            firebase.auth.EmailAuthProvider.PROVIDER_ID,
+            firebase.auth.GoogleAuthProvider.PROVIDER_ID
+          ]
+          // Future config options...
+        });
+      </script>
       <script src="dist/js/auth.js"></script>
    </body>
 </html>
