@@ -25,6 +25,7 @@
     "start": "run-p serve watch:*",
     "start-hosted": "node server.js",
     "serve": "browser-sync start --server --files \"dist/css/*.css, dist/js/*.js, **/*.html, !node_modules/**/*.html\"",
+    "deploy": "firebase deploy --only hosting:onit-landing",
     "build:css": "run-s lint-scss scss autoprefixer",
     "build:browserify": "browserify src/js/auth.js -p esmify > dist/js/auth.js",
     "build:js": "run-s lint uglify",
