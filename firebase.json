@@ -1,7 +1,7 @@
 {
   "hosting": {
     "site": "onit-landing",
-    "public": "./",
+    "public": "./dist",
     "ignore": [
       "firebase.json",
       "**/.*",
