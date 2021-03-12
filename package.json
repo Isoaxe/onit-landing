@@ -24,7 +24,7 @@
     "imagemin": "imagemin src/images/* -o dist/images",
     "start": "run-p serve watch:*",
     "start-hosted": "node server.js",
-    "serve": "browser-sync start --server --files \"dist/css/*.css, dist/js/*.js, **/*.html, !node_modules/**/*.html\"",
+    "serve": "browser-sync start --server --index 'dist/index.html' --files 'dist/css/*.css, dist/js/*.js, **/*.html, !node_modules/**/*.html'",
     "deploy": "firebase deploy --only hosting:onit-landing",
     "build:css": "run-s lint-scss scss autoprefixer",
     "build:js": "run-s lint uglify",
