@@ -3,5 +3,7 @@
 
 # Auto-generated files:
 node_modules
-dist/
+dist/css
+dist/js
+dist/images
 .firebase
