@@ -27,7 +27,6 @@
     "serve": "browser-sync start --server --files \"dist/css/*.css, dist/js/*.js, **/*.html, !node_modules/**/*.html\"",
     "deploy": "firebase deploy --only hosting:onit-landing",
     "build:css": "run-s lint-scss scss autoprefixer",
-    "build:browserify": "browserify src/js/auth.js -p esmify > dist/js/auth.js",
     "build:js": "run-s lint uglify",
     "build:images": "run-s imagemin",
     "build": "run-s build:*",
@@ -37,8 +36,6 @@
   },
   "dependencies": {
     "express": "^4.17.1",
-    "firebase": "^8.2.9",
-    "firebaseui": "^4.7.3",
     "path": "^0.12.7"
   },
   "devDependencies": {
@@ -50,7 +47,6 @@
     "eslint-plugin-node": "^7.0.1",
     "eslint-plugin-promise": "^3.8.0",
     "eslint-plugin-standard": "^3.1.0",
-    "esmify": "^2.1.1",
     "imagemin-cli": "^3.0.0",
     "mkdirp": "^0.5.1",
     "node-sass": "^4.9.2",
