@@ -30,10 +30,6 @@
     "watch:js": "onchange \"src/js\" -- run-s build:js",
     "watch:images": "onchange \"src/images\" -- run-s build:images"
   },
-  "dependencies": {
-    "express": "^4.17.1",
-    "path": "^0.12.7"
-  },
   "devDependencies": {
     "autoprefixer": "^9.0.1",
     "browser-sync": "^2.12.8",
