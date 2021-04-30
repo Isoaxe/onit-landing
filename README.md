@@ -22,4 +22,4 @@ This starts the project by spinning up a new development server using BrowserSyn
 
 ## Remote Hosting
 
-The (website)[https://onit-landing.web.app/] is hosted on Firebase. Only the `dist` folder is exposed. No separate server is required, Firebase has been configured to load the `index.html` file.
+The [website](https://onit-landing.web.app/) is hosted on Firebase. Only the `dist` folder is exposed. No separate server is required, Firebase has been configured to load the `index.html` file.
