@@ -9,8 +9,6 @@
       <link href="https://fonts.googleapis.com/css?family=Heebo:400,400i,500,700|Titillium+Web:600" rel="stylesheet">
       <link rel="stylesheet" href="./css/style.css">
       <script src="https://unpkg.com/scrollreveal@4.0.0/dist/scrollreveal.min.js"></script>
-      <script src="https://www.gstatic.com/firebasejs/ui/4.6.1/firebase-ui-auth.js"></script>
-      <link type="text/css" rel="stylesheet" href="https://www.gstatic.com/firebasejs/ui/4.6.1/firebase-ui-auth.css" />
    </head>
    <body class="is-boxed">
       <div class="body-wrap boxed-container">
@@ -59,11 +57,10 @@
                         <p class="hero-paragraph is-revealing">The most convenient way to manage tasks in your apartment building.</p>
                         <div class="hero-form field field-grouped is-revealing">
                            <div class="control">
-                              <div id="firebaseui-auth-container"></div>
+                             <a class="button button-primary button-block" href="https://onit-main.web.app/">Login</a>
                            </div>
                         </div>
                      </div>
-                     <div id="firebaseui-auth-container"></div>
                      <div class="hero-illustration">
                         <div class="hero-bg">
                            <svg width="720" height="635" xmlns="http://www.w3.org/2000/svg">
@@ -430,37 +427,5 @@
          </footer>
       </div>
       <script src="./js/main.min.js"></script>
-
-      <!-- Firebase App (the core Firebase SDK) is always required and must be listed first -->
-      <script src="https://www.gstatic.com/firebasejs/8.2.10/firebase-app.js"></script>
-      <!-- Add Firebase products that you want to use -->
-      <script src="https://www.gstatic.com/firebasejs/8.2.10/firebase-auth.js"></script>
-
-      <script>
-        var firebaseConfig = {
-          apiKey: 'AIzaSyD7OtnYqeu-9sEiEJKl1bkGpaRBEzTFfy0',
-          authDomain: 'onit-aaa6e.firebaseapp.com',
-          projectId: 'onit-aaa6e',
-          storageBucket: 'onit-aaa6e.appspot.com',
-          messagingSenderId: '451988465101',
-          appId: '1:451988465101:web:335beb05b535b1257d9084',
-          measurementId: 'G-CB3S63219R'
-        };
-
-        // Initialize Firebase
-        firebase.initializeApp(firebaseConfig);
-
-        // Initialize the FirebaseUI Widget using Firebase.
-        const ui = new firebaseui.auth.AuthUI(firebase.auth());
-
-        ui.start('#firebaseui-auth-container', {
-          signInOptions: [
-            firebase.auth.EmailAuthProvider.PROVIDER_ID,
-            firebase.auth.GoogleAuthProvider.PROVIDER_ID
-          ],
-          signInSuccessUrl: 'https://onit-main.web.app/',
-          // Future config options...
-        });
-      </script>
    </body>
 </html>
